@@ -1160,6 +1160,7 @@ void XmlAddEndpointDescriptor(
     switch (connectionSpeed)
     {
         case UsbHighSpeed:
+        case UsbSuperSpeed:
             if (endPointDescriptor->bmAttributes & 1) {
                 ULONG transactions = ((endPointDescriptor->wMaxPacketSize & 0x1800) >> 11) + 1;
                 // Isoc or Interrupt endpoint

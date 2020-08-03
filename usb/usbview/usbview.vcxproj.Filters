@@ -48,4 +48,65 @@
       <Filter>Resource Files</Filter>
     </ResourceCompile>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="codeanalysis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h264.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="langidlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="usbdesc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="usbschema.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="usbviddesc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uvcdesc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uvcview.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vndrlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xmlhelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bang.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="hub.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="monitor.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="port.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="split.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ssport.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ssusb.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="usb.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
 </Project>

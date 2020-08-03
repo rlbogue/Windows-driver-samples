@@ -49,6 +49,7 @@
     <DriverType />
     <PlatformToolset>WindowsApplicationForDrivers10.0</PlatformToolset>
     <ConfigurationType>Application</ConfigurationType>
+    <Driver_SpectreMitigation>false</Driver_SpectreMitigation>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <TargetVersion>Windows10</TargetVersion>
@@ -57,6 +58,7 @@
     <DriverType />
     <PlatformToolset>WindowsApplicationForDrivers10.0</PlatformToolset>
     <ConfigurationType>Application</ConfigurationType>
+    <Driver_SpectreMitigation>false</Driver_SpectreMitigation>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <PropertyGroup>
@@ -74,7 +76,19 @@
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
   </ImportGroup>
-  <ItemGroup Label="WrappedTaskItems" />
+  <ItemGroup Label="WrappedTaskItems">
+    <ClInclude Include="codeanalysis.h" />
+    <ClInclude Include="h264.h" />
+    <ClInclude Include="langidlist.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="usbdesc.h" />
+    <ClInclude Include="usbschema.hpp" />
+    <ClInclude Include="usbviddesc.h" />
+    <ClInclude Include="uvcdesc.h" />
+    <ClInclude Include="uvcview.h" />
+    <ClInclude Include="vndrlist.h" />
+    <ClInclude Include="xmlhelper.h" />
+  </ItemGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <TargetName>usbview</TargetName>
   </PropertyGroup>
@@ -172,11 +186,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Exclude="@(None)" Include="*.txt;*.htm;*.html" />
-    <None Exclude="@(None)" Include="*.ico;*.cur;*.bmp;*.dlg;*.rct;*.gif;*.jpg;*.jpeg;*.wav;*.jpe;*.tiff;*.tif;*.png;*.rc2" />
     <None Exclude="@(None)" Include="*.def;*.bat;*.hpj;*.asmx" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Exclude="@(ClInclude)" Include="*.h;*.hpp;*.hxx;*.hm;*.inl;*.xsd" />
+    <None Include="bang.ico" />
+    <None Include="hub.ico" />
+    <None Include="monitor.ico" />
+    <None Include="port.ico" />
+    <None Include="split.cur" />
+    <None Include="ssport.ico" />
+    <None Include="ssusb.ico" />
+    <None Include="usb.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
 </Project>
